@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Newake";
+    src: url("NewakeFont-Demo.otf") format("truetype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Newake';
+}
+
+.princ {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: rgb(49, 20, 213);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding-left: 4vh;
+    width: 100%;
+    font-size: 3vh;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#consultar {
+    font-family: 'Newake';
+    background-color: rgb(49, 20, 213);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    width: 18vh;
+    height: 5vh;
+    padding: .5vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vh;
+}
+
+.bottom-right-svg {
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }

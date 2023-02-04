@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Newake";
+    src: url("NewakeFont-Demo.otf") format("truetype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Newake';
+}
+
+.arriba {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    background-color: rgb(49, 20, 213);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 2vh;
+}
+
+.arriba h1 {
+    padding-top: 3vh;
+}
+
+.terminos {    
+    color: rgb(49, 20, 213);
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding-left: 4vh;
+    width: 100%;
+    font-size: 3.5vh;
+}
+
+.texto {
+    padding: 4vh;
+    padding-top: 0;    
+    text-align: justify;
+    font-size: 1.5vh;
+    color: rgb(34, 32, 32);
+    font-size: 1.5vh;
+}
