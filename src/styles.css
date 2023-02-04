@@ -79,7 +79,7 @@ html, body {
 
 #consultar {
     position: relative;
-    top: calc(var(--divi)/1.5);
+    top: calc(var(--divi)/2.5);
     text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
