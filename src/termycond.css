@@ -26,29 +26,25 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;    
+    overflow-x: hidden;
     font-size:  5vh;
     padding-top: 1vh;
 }
 
 .terminos {    
     color: var(--main-color);
-    height: 100px;
     margin-top: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
     text-align: left;
-    padding-left: 4vh;
-    width: 100%;
+    padding-left: 10%;
+    width: 90%;
     font-size: 5.5vh;
+    overflow-x: hidden;
 }
 
 .texto {
     font-family: 'Open Sans', sans-serif;
-    padding: 4vh;
+    padding: 5vh;
     padding-top: 2.5vh;    
-    /*text-align: justify;
-    text-justify: inter-word;*/
     text-align: left;
     color: var(--main-color);
     font-size: 1.7vh;

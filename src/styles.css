@@ -3,31 +3,51 @@
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
 
+
+.desktop-only {
+    display: none;
+
+}
+
+.desktop-only h1 {
+    color: #13339A;
+    font-size: 5vh;
+    padding: 3vh;
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+}
+
 :root {
     --main-color: #13339A;
 }
 
-body {
-    padding: 0;
+body { 
     margin: 0;
+    padding: 0;
     font-family: 'Newake';
-    overflow-x: hidden;
 }
 
 .princ {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
     color: var(--main-color);
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: left;
     text-align: left;
-    padding-left: 4vh;
-    width: 100%;
-    font-size: 7vh;
+    padding-left: 10%;
+    width: 90%;
+    font-size: 6.8vh;
 }
 
 .btn {
@@ -38,6 +58,7 @@ body {
 }
 
 #consultar {
+    text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
     border: none;
@@ -45,15 +66,13 @@ body {
     color: #fff;
     width: 25vh;
     height: 7vh;
-    margin-top: 2vh;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 4vh;
 }
 
 #consultar:hover {
-    background-color: #fff;
+    background-color: #f5a07c;
 }
 
 .logo {
