@@ -74,3 +74,14 @@ body {
     color: var(--main-color);
     font-size: 1.7vh;
 }
+
+a {
+    font-family: "Newake";
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:active {
+    color: #f5a07c;
+}

@@ -48,32 +48,9 @@ html, body {
 
 :root {
     --main-color: #13339A;
+    --divi: calc(var(--doc-height) / 3);
 }
 
-/*
-.princ {
-    position: relative;
-    top: 0;
-    color: var(--main-color);
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-    padding-left: 10%;
-    width: 90%;
-    font-size: 6.8vh;
-}*/
-
-.prueba {
-    background-color: #13339A;
-    height: var(--doc-height);
-    /*position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;*
-}
 
 .princ{
     margin: 0;
@@ -85,20 +62,24 @@ html, body {
     width: 100%;    
     overflow-x: hidden;
     font-size:  7.5vh;
-    padding-top: 1vh;
-    height: 39vh;
+    height: var(--divi);
+}
+
+.princ p {
+    position: absolute;
+    top: 10%;
 }
 
 .btn {
     display: inline-block;
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: var(--divi);
 }
 
 #consultar {
     position: relative;
-    top: 6vh;
+    top: calc(var(--divi)/2);
     text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
@@ -114,12 +95,12 @@ html, body {
 
 #consultar:hover {
     background-color: #f5a07c;
+    color: var(--main-color);
 }
 
 .logo {
     width: 100%;
-    height: 45vh;
-    background-color: lightgray;
+    height: var(--divi);
     position: relative;
 }
 
