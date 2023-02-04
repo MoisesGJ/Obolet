@@ -38,20 +38,6 @@ body {
     padding: 0;
     font-family: 'Newake';
 }
-/*
-.princ {
-    position: relative;
-    top: 0;
-    color: var(--main-color);
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-    padding-left: 10%;
-    width: 90%;
-    font-size: 6.8vh;
-}*/
 
 .princ{
     margin: 0;
@@ -64,9 +50,10 @@ body {
     overflow-x: hidden;
     font-size:  7.5vh;
     padding-top: 1vh;
-    height: 39vh;
+    height: 99vh;
 }
-
+/*
+39
 .btn {
     display: inline-block;
     display: flex;
@@ -111,3 +98,4 @@ body {
     right: 0;
     margin: auto;
 }
+*/
