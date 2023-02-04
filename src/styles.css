@@ -1,3 +1,14 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Newake';
+    min-height: 100vh;
+}
+
 @font-face {
     font-family: "Newake";
     src: url("NewakeFont-Demo.otf") format("truetype");
@@ -6,7 +17,6 @@
 
 .desktop-only {
     display: none;
-
 }
 
 .desktop-only p {
@@ -29,16 +39,20 @@
     }
 }
 
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      min-height: -webkit-fill-available;
+    }
+}
+
+
+
 :root {
     --main-color: #13339A;
 }
 
-body { 
-    margin: 0;
-    padding: 0;
-    font-family: 'Newake';
-    overflow-y: hidden !important;
-}
 /*
 .princ {
     position: relative;
