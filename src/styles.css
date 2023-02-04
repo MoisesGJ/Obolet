@@ -93,12 +93,15 @@ body {
 }
 
 .logo {
+    background-color: #000000;
+    display: inline-block;
     height: 45vh;
+    width: 100%;
 }
 
 .logo_img {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 45vh;
+    height: 40vh;
 }
