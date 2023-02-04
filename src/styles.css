@@ -54,6 +54,7 @@ body {
 }*/
 
 .princ{
+    margin: 0;
     color: var(--main-color);
     display: flex;
     align-items: center;
@@ -67,6 +68,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     display: flex;
     justify-content: center;
     height: 15vh;
@@ -74,7 +76,7 @@ body {
 
 #consultar {
     position: relative;
-    top: 6.5vh;
+    top: 6vh;
     text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
@@ -93,15 +95,19 @@ body {
 }
 
 .logo {
-    background-color: #000000;
-    display: inline-block;
-    height: 45vh;
     width: 100%;
+    height: 45vh;
+    background-color: lightgray;
+    position: relative;
 }
 
 .logo_img {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    height: 40vh;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
