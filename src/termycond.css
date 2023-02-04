@@ -3,6 +3,10 @@
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
 
+:root {
+    --main-color: #13339A;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -15,38 +19,37 @@ body {
     left: 0;
     right: 0;
     height: 8vh;
-    background-color: rgb(49, 20, 213);
+    background-color: var(--main-color);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    font-size: 2vh;
-}
-
-.arriba h1 {
-    padding-top: 3vh;
+    width: 100%;    
+    font-size:  5vh;
+    padding-top: 1vh;
 }
 
 .terminos {    
-    color: rgb(49, 20, 213);
+    color: var(--main-color);
     height: 100px;
-    margin-top: 30px;
+    margin-top: 6vh;
     display: flex;
     align-items: center;
     justify-content: left;
     text-align: left;
     padding-left: 4vh;
     width: 100%;
-    font-size: 3.5vh;
+    font-size: 5.5vh;
 }
 
 .texto {
+    font-family: 'Open Sans', sans-serif;
     padding: 4vh;
-    padding-top: 0;    
-    text-align: justify;
-    font-size: 1.5vh;
-    color: rgb(34, 32, 32);
-    font-size: 1.5vh;
+    padding-top: 2.5vh;    
+    /*text-align: justify;
+    text-justify: inter-word;*/
+    text-align: left;
+    color: var(--main-color);
+    font-size: 1.7vh;
 }

@@ -3,10 +3,15 @@
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
 
+:root {
+    --main-color: #13339A;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Newake';
+    overflow-x: hidden;
 }
 
 .princ {
@@ -14,15 +19,15 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    color: rgb(49, 20, 213);
-    height: 50vh;
+    color: var(--main-color);
+    height: 45vh;
     display: flex;
     align-items: center;
     justify-content: left;
     text-align: left;
     padding-left: 4vh;
     width: 100%;
-    font-size: 3vh;
+    font-size: 7vh;
 }
 
 .btn {
@@ -34,22 +39,26 @@ body {
 
 #consultar {
     font-family: 'Newake';
-    background-color: rgb(49, 20, 213);
+    background-color: var(--main-color);
     border: none;
     border-radius: 50px;
     color: #fff;
-    width: 18vh;
-    height: 5vh;
-    padding: .5vh;
+    width: 25vh;
+    height: 7vh;
+    margin-top: 2vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
-.bottom-right-svg {
-    width: 25vh;
-    height: 25vh;
+#consultar:hover {
+    background-color: #fff;
+}
+
+.logo {
+    width: 45vh;
+    height: 45vh;
     position: absolute;
     bottom: 0;
     left: 0;
