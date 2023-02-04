@@ -37,10 +37,12 @@ body {
     padding: 0;
     font-family: 'Newake';
 }
-
+/*
 .princ {
+    position: relative;
+    top: 0;
     color: var(--main-color);
-    height: 45vh;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -48,16 +50,30 @@ body {
     padding-left: 10%;
     width: 90%;
     font-size: 6.8vh;
+}*/
+
+.princ{
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;    
+    overflow-x: hidden;
+    font-size:  7vh;
+    padding-top: 1vh;
+    height: 40vh;
 }
 
 .btn {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    height: 15vh;
 }
 
 #consultar {
+    position: relative;
+    top: 30%;
     text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
@@ -76,7 +92,6 @@ body {
 }
 
 .logo {
-    width: 45vh;
     height: 45vh;
     position: absolute;
     bottom: 0;
