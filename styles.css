@@ -1,0 +1,124 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Newake';
+}
+
+@font-face {
+    font-family: "Newake";
+    src: url("NewakeFont-Demo.otf") format("truetype");
+}
+
+
+.desktop-only {
+    display: none;
+}
+
+.desktop-only p {
+    font-family: 'Open Sans', sans-serif;
+    color: #13339A;
+    font-size: 3vh;
+    padding: 3vh;
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+}
+
+
+:root {
+    --main-color: #13339A;
+}
+
+/*
+.princ {
+    position: relative;
+    top: 0;
+    color: var(--main-color);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding-left: 10%;
+    width: 90%;
+    font-size: 6.8vh;
+}*/
+
+.prueba {
+    background-color: #13339A;
+    width: 100%;
+    height: 100vw;
+}
+
+.princ{
+    margin: 0;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;    
+    overflow-x: hidden;
+    font-size:  7.5vh;
+    padding-top: 1vh;
+    height: 39vh;
+}
+
+.btn {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+#consultar {
+    position: relative;
+    top: 6vh;
+    text-decoration: none;
+    font-family: 'Newake';
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    width: 25vh;
+    height: 7.5vh;
+    text-align: center;
+    display: inline-block;
+    font-size: 4vh;
+}
+
+#consultar:hover {
+    background-color: #f5a07c;
+}
+
+.logo {
+    width: 100%;
+    height: 45vh;
+    background-color: lightgray;
+    position: relative;
+}
+
+.logo_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
