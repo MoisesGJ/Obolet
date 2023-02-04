@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
+    <script>
+        const documentHeight = () => {
+        const doc = document.documentElement
+        doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+        }
+        window.addEventListener('resize', documentHeight)
+        documentHeight()
+    </script>
     <div class="mobile-only">
     <!--<div class="princ">
             Términos y<br>condiciones     
