@@ -34,9 +34,10 @@
 }
 
 body { 
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Newake';
+    overflow-y: hidden !important;
 }
 
 .princ{
@@ -47,7 +48,6 @@ body {
     justify-content: center;
     text-align: left;
     width: 100%;    
-    overflow: hidden;
     font-size:  7.5vh;
     padding-top: 0vh;
     height: 100vh;
