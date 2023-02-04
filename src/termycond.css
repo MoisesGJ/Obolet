@@ -3,6 +3,31 @@
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
 
+.desktop-only {
+    display: none;
+
+}
+
+.desktop-only p {
+    font-family: 'Open Sans', sans-serif;
+    color: #13339A;
+    font-size: 3vh;
+    padding: 3vh;
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+}
+
 :root {
     --main-color: #13339A;
 }
