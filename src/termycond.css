@@ -2,7 +2,7 @@
     font-family: "Newake";
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
-
+/*
 .desktop-only {
     display: none;
 
@@ -27,7 +27,7 @@
       display: none;
     }
 }
-
+*/
 :root {
     --main-color: #13339A;
 }
@@ -60,15 +60,15 @@ body {
     color: var(--main-color);
     margin-top: 6vh;
     text-align: left;
-    padding-left: 10%;
-    width: 90%;
+    margin-left: 10%;
+    width: 80%;
     font-size: 5.5vh;
     overflow-x: hidden;
 }
 
 .texto {
     font-family: 'Open Sans', sans-serif;
-    padding: 5vh;
+    padding: 10%;
     padding-top: 2.5vh;    
     text-align: left;
     color: var(--main-color);
@@ -79,9 +79,12 @@ a {
     font-family: "Newake";
     color: var(--main-color);
     text-decoration: underline;
-    font-weight: bold;
 }
 
 a:active {
+    color: #f5a07c;
+}
+
+a:hover {
     color: #f5a07c;
 }

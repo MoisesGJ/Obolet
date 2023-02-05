@@ -13,17 +13,10 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    <script>
-        const documentHeight = () => {
-        const doc = document.documentElement
-        doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-        }
-        window.addEventListener('resize', documentHeight)
-        documentHeight()
-    </script>
-    <div class="mobile-only">
-    <div class="princ">
-            <p>Términos y<br>condiciones</p>     
+    <!--<div id="main">
+        <div class="mobile-only">-->
+        <div class="princ">
+            <p>Términos y<br> condiciones</p>     
         </div>
         <div class="btn">
             <a href="about_obolet"><button id="consultar">consultar</button></a>
@@ -31,10 +24,18 @@
         <div class="logo">
             <img src="src/logo.png" class="logo_img">
         </div>
+    <!--</div>-->
+        
+    <!--<div class="desktop-only">
+            <div class="main"></div>
+            <p class="parra">Estamos trabajando en la versión para este dispositivo</p>
+            <p class="parrb">Revise la página en un dispositivo móvil</p>
+            <img src="" alt="Pewito" id="pewito">
+        </div>
     </div>
-    
-    <div class="desktop-only">
-        <p>Estamos trabajando en la versión para este dispositivo.<br>Revise la página en un dispositivo móvil.</p>
-    </div>
+
+    <script src="src/js/loader.js"></script>    
+    <script src="src/js/imgrandom.js"></script>-->
+    <script src="src/js/ancho.js"></script>
 </body>
 </html>

@@ -14,22 +14,44 @@ html, body {
     src: url("NewakeFont-Demo.otf") format("truetype");
 }
 
-
+/*
 .desktop-only {
     display: none;
+    position: relative;
+    height: var(--doc-height);
     width: 100%;
-    height: 100vh;
     background-color: #13339A;
     color: #fff;
 }
 
-.desktop-only p {
-    position: fixed;
-    top: 5px;
-    left: 5vh;
-    font-family: 'Open Sans', sans-serif;
+.desktop-only > p {
+    position: absolute;
+    text-align: center;
     padding: 0;
-    font-size: 3vh;
+    font-size: 3.5vh;
+    width: 90%;
+}
+
+.desktop-only > .parra {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.desktop-only > .parrb {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.desktop-only img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .mobile-only {
@@ -46,9 +68,15 @@ html, body {
 }
 
 
+@media only screen and (min-width: 650px) {
+    br {
+      display: none;
+    }
+}
+*/
+
 :root {
     --main-color: #13339A;
-    --divi: calc(var(--doc-height) / 3);
 }
 
 
@@ -56,13 +84,11 @@ html, body {
     margin: 0;
     color: var(--main-color);
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: left;
+    align-items: left;
     width: 100%;    
-    overflow-x: hidden;
     font-size:  7.5vh;
-    height: var(--divi);
+    height:  calc(var(--doc-height) / 3);   
 }
 
 .princ p {
@@ -74,12 +100,17 @@ html, body {
     display: inline-block;
     display: flex;
     justify-content: center;
-    height: var(--divi);
+    height: calc(var(--doc-height) / 6);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #consultar {
     position: relative;
-    top: calc(var(--divi)/2.5);
+    top: 60%;
     text-decoration: none;
     font-family: 'Newake';
     background-color: var(--main-color);
@@ -87,7 +118,7 @@ html, body {
     border-radius: 50px;
     color: #fff;
     width: 25vh;
-    height: 7.5vh;
+    height: 40%;
     text-align: center;
     display: inline-block;
     font-size: 4vh;
@@ -100,12 +131,13 @@ html, body {
 
 .logo {
     width: 100%;
-    height: var(--divi);
+    height: calc(var(--doc-height) / 2);
     position: relative;
 }
 
 .logo_img {
-    width: 80%;
+    max-width: 95%;
+    max-height: 95%;
     /*height: 100%;*/
     position: absolute;
     /*top: 0;*/
