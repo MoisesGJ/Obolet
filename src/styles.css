@@ -92,8 +92,8 @@ html, body {
 }
 
 .princ p {
-    position: absolute;
-    bottom: 10%;
+    /*position: absolute;
+    top: 10%;*/
 }
 
 .btn {
